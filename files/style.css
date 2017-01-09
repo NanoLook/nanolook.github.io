@@ -9,8 +9,8 @@ body {
   font-size: 60pt;
   color: white;
 }
-tabs {
-    text-align: center;
+center {
+  text-align: center;
 }
 video#bgvid { 
   position: fixed;
