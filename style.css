@@ -1,0 +1,202 @@
+html {
+  font-family: Avenir, 'Avenir next', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+}
+
+.fa {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.fa:hover {
+  opacity: 0.8
+}
+.border-ra {
+  height: 240px;
+  width: 240px;
+  border-radius: 200px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.border-ra:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.layout-image {
+  text-align: center;
+  position: relative;
+  top:70%;
+  z-index: 3;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1.content-he {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3,
+blockquote p {
+  font-size: 1.25rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+cite {
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.layout-main {
+  position: relative;
+  height: 550px;
+  background: url(header1.jpg) no-repeat center center;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  box-shadow:0 0 0 300px rgba(0, 0, 0, 0.5) inset;
+  
+  
+
+}
+
+.layout-content {
+  text-align: center;
+  position: relative;
+  top:45%;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+  
+}
+
+blockquote {
+  font-style: italic;
+}
+
+cite {
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.article {
+  max-width: 36rem;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5.5rem 2rem;
+}
+
+.article > * + * {
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    outline: 1px dashed #606af6;
+    outline-offset: -1px;
+    background-color: rgba(#606af6, .05);
+    display: none;
+    .highlight-margins & {
+      display: block;
+    }
+  }
+}
+
+
+
+*,*:before,*:after {
+    box-sizing: inherit
+}
+
+.solid {
+  background-color: black;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.article {
+  --base-margin: 1rem;
+}
+@media (min-width: 30em) {
+  .article {
+    --base-margin: 1.5rem;
+  }
+}
+.article > * + * {
+  margin-top: var(--base-margin);
+}
+.article > h2 + * {
+  margin-top: calc(var(--base-margin) * 0.5);
+}
+.article > h3 + * {
+  margin-top: calc(var(--base-margin) * 0.333);
+}
+.article > figure + * {
+  margin-top: calc(var(--base-margin) * 2);
+}
+.article > blockquote + * {
+  margin-top: calc(var(--base-margin) * 1.666);
+}
+.article > * + h2 {
+  margin-top: calc(var(--base-margin) * 3);
+}
+.article > * + h3 {
+  margin-top: calc(var(--base-margin) * 1.666);
+}
+.article > * + figure {
+  margin-top: calc(var(--base-margin) * 2);
+}
+.article > * + blockquote {
+  margin-top: calc(var(--base-margin) * 1.666);
+}
+.article > h2 + h3 {
+  margin-top: calc(var(--base-margin) * 1.333);
+}
+.article > h2 + figure {
+  margin-top: calc(var(--base-margin) * 0.833);
+}
+.article > figure + figure {
+  margin-top: calc(var(--base-margin) * 1.333);
+}

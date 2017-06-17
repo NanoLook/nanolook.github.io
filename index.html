@@ -1,48 +1,78 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-  <meta charset="utf-8">
-  <title>Hrebeniuk</title>
-  <link rel="stylesheet" href="files/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <title>Demo 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/48cc016cc2.js"></script>
 </head>
+
 <body>
-  <video autoplay loop id="bgvid">
-    <source src="night.mp4" type="video/mp4">
-  </video>
-  <div id="video_cover"></div>
-  <!-- вкладки -->
-      <ul class="center tabs tabs-transparent">
-        <li class="tab"><a class="active" href="#test1">Test 1</a></li>
-        <li class="tab"><a href="#test2">Test 2</a></li>
-      </ul>
-  <div class="verh"><span class="typed"></span></div>
-  <!-- вкладки -->
-  <div id="test1" class="col s12">Test 1</div>
-  <div id="test2" class="col s12">Test 2</div>
-  <!--/вкладки -->
-  <div id="footer" class="social animated tada">
-    <a href="http://vk.com/nanolook"><i style="" class="fa fa-vk social" aria-hidden="true"></i></a>
-    <a href="http://twitter.com/nanolookCEO"><i style="" class="fa fa-twitter social" aria-hidden="true"></i></a>
-    <a href="http://instagram.com/nanolook"><i style="" class="fa fa-instagram social" aria-hidden="true"></i></a>
-  </div>
+    <section class="layout-main">
+        <div class="layout-content">
+            <h1 class="content-he">Dima Hrebeniuk</h1>
+            <h2>Reedify CEO</h2>
+            <h1>
+                <a href="http://t.me/nanolook"><i class="fa fa-telegram fa-fw" aria-hidden="true"></i></a>
+                <a href="http://vk.com/nanolook"><i class="fa fa-vk fa-fw" aria-hidden="true"></i></a>
+                <a href="http://instagram.com/nanolook"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+                <a href="http://fb.com/nanolookc"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                <a href="http://twitter.com/nanolookc"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                <a href="http://github.com/nanolook"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
+            <h1>
+        </div>
+        <div class="layout-image">
+            <a href="https://vk.com/nanolook?z=photo210054294_456244024"><img class="border-ra" src="img.jpg" alt="" /></a>
+        </div>
+    </section>
+
+    <article class="article">
+</article>
+
   
 </body>
 </html>
-<!-- Ввод текста. -->
-<script src="files/typed.js"></script>
-<script>
-$(function(){
-    $(".typed").typed({
-      strings: ["Dima Hrebeniuk."],
-      typeSpeed: 100,      
-    });
-});
+<link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+   <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "5236c231-f600-4caa-95ac-e884f4d7ea12",
+      autoRegister: true,
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+        enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43515174 = new Ya.Metrika({
+                    id:43515174,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
 </script>
-<!--/Ввод текста. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<noscript><div><img src="https://mc.yandex.ru/watch/43515174" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
